@@ -2,9 +2,16 @@
 
 from __future__ import annotations
 
+from lupaxa.divulge import version as version_mod
+from lupaxa.divulge.version import get_version
 
-def test_version_is_semver() -> None:
-    from lupaxa.divulge import __version__, get_version
 
-    assert __version__ == "0.0.0"
-    assert get_version() == "0.0.0"
+def test_version_is_semver_like() -> None:
+    assert isinstance(version_mod.__version__, str)
+    parts = version_mod.__version__.split(".")
+    assert len(parts) >= 2
+    assert all(part.isdigit() for part in parts[:2])
+
+
+def test_get_version_matches_dunder() -> None:
+    assert get_version() == version_mod.__version__
