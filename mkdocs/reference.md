@@ -65,7 +65,7 @@ There is no console script and no `python -m lupaxa.divulge` entry point.
 `configure()` and per-call options use these field names. Per-call aliases
 `colour` / `color` and `prefix` map onto the active level.
 
-## Message coercion
+## Message Coercion
 
 | Value type | Printed as                                      |
 | ---------- | ----------------------------------------------- |
@@ -75,7 +75,7 @@ There is no console script and no `python -m lupaxa.divulge` entry point.
 
 Whitespace-only results are not printed.
 
-## Colour names
+## Colour Names
 
 Colours are [termcolor](https://pypi.org/project/termcolor/) names. Common
 values include `light_red`, `light_yellow`, `light_green`, `light_cyan`,

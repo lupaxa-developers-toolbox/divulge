@@ -1,4 +1,4 @@
-# divulge
+# Divulge
 
 Opinionated console messaging for Python — coloured, prefixed `info`,
 `success`, `warning`, `error`, and `system` lines.
@@ -36,10 +36,3 @@ divulge.system("Starting backup job")
 Colours come from [termcolor](https://pypi.org/project/termcolor/). Prefixes
 and colours can be turned off for the process, or overridden on a single
 call. Bold is off by default; pass `use_bold=True` to enable it.
-
-## Next steps
-
-- [Getting started](getting-started.md) — install and first messages
-- [Usage](usage.md) — configure, wrappers, and per-call options
-- [Reference](reference.md) — public API and config fields
-- [Examples](examples.md) — copy-paste recipes

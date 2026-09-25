@@ -4,7 +4,7 @@
   </a>
 </p>
 
-<h1 align="center">divulge</h1>
+<h1 align="center">Divulge</h1>
 
 Opinionated console messaging helper for Python — coloured, prefixed
 `info` / `success` / `warning` / `error` / `system` lines.

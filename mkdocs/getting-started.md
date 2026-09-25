@@ -1,4 +1,4 @@
-# Getting started
+# Getting Started
 
 ## Requirements
 
@@ -22,7 +22,7 @@ divulge.info("Ready")
 The PyPI name is `lupaxa-divulge`. The import path is `lupaxa.divulge`.
 `lupaxa` is a namespace package — there is no `lupaxa/__init__.py`.
 
-### From source (development)
+### From Source (Development)
 
 Editable install with dev extras (includes the MkDocs pins):
 
@@ -38,7 +38,7 @@ After makefile-skills are installed:
 make mkdocs-serve
 ```
 
-## First messages
+## First Messages
 
 ```python
 import lupaxa.divulge as divulge
@@ -64,7 +64,7 @@ A walkthrough of the same API lives in `demo.py` at the repository root
 python demo.py
 ```
 
-## Makefile helpers
+## Makefile Helpers
 
 ```bash
 make init                 # clone makefile-skills into .makefiles/

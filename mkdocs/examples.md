@@ -1,6 +1,6 @@
 # Examples
 
-## Direct functions
+## Direct Functions
 
 ```python
 import lupaxa.divulge as divulge
@@ -12,7 +12,7 @@ divulge.error("Something went wrong!")
 divulge.system("System message")
 ```
 
-## Disable colours and prefixes
+## Disable Colours and Prefixes
 
 ```python
 divulge.info("Defaults: prefix and colour on")
@@ -23,7 +23,7 @@ divulge.configure(use_colours=True, use_prefixes=True)
 divulge.info("Colours and prefixes restored")
 ```
 
-## Bold colour (off by default)
+## Bold Colour (Off by Default)
 
 ```python
 divulge.info("Default: coloured, not bold")
@@ -33,7 +33,7 @@ divulge.success("Bold enabled for the rest of the process")
 divulge.configure(use_bold=False)
 ```
 
-## Class and sugar helper
+## Class and Sugar Helper
 
 ```python
 from lupaxa.divulge import Divulge
@@ -46,7 +46,7 @@ divulge.divulge("From sugar helper").info()
 divulge.divulge({"key": "value"}).error()
 ```
 
-## Chain several levels
+## Chain Several Levels
 
 The same value is printed once per level:
 
@@ -54,7 +54,7 @@ The same value is printed once per level:
 divulge.divulge("Chained message").info().success().warning().error().system()
 ```
 
-## Non-string values
+## Non-String Values
 
 ```python
 from datetime import datetime
@@ -65,7 +65,7 @@ divulge.info(datetime.now())
 divulge.info(datetime.now(), time_format="%H:%M:%S", prefix="[ TIME ]")
 ```
 
-## Demo script
+## Demo Script
 
 From a clone of this repository (not installed with the wheel):
 

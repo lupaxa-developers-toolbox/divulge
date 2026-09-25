@@ -1,6 +1,6 @@
 # Usage
 
-## Module functions
+## Module Functions
 
 Import the namespace and call a level function. Each function accepts any
 value; strings print as-is, `datetime` values use the configured time format,
@@ -19,7 +19,7 @@ divulge.info(datetime.now())
 
 Empty or whitespace-only messages are skipped.
 
-## Global configuration
+## Global Configuration
 
 `configure()` updates the shared default engine. Only
 [`DivulgeConfig`](reference.md#divulgeconfig) field names are applied;
@@ -37,7 +37,7 @@ Change a default prefix or colour for the rest of the process:
 divulge.configure(info_prefix="[ NOTE ]", system_colour="light_blue")
 ```
 
-## Wrapper and sugar
+## Wrapper and Sugar
 
 `Divulge` holds one value and prints it when you call a level method. Each
 method returns `self`, so you can chain.
@@ -60,7 +60,7 @@ divulge.divulge("Chained").info().success().warning().error().system()
 On `Divulge`, `warn` is an alias of `warning` and `ok` is an alias of
 `success`.
 
-## Per-call options
+## Per-Call Options
 
 Any call accepts the same knobs as `configure()`, plus short aliases:
 
