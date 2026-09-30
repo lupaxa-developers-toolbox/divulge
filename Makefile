@@ -41,7 +41,7 @@ $(error Failed to load $(MAKEFILES_CONFIG). $(shell cat "$(_MF_CFG_MK).err" 2>/d
 endif
 endif
 
-SKILLS         ?= python mkdocs
+SKILLS         ?= python
 MAKEFILES_REF  ?= head
 MAKEFILES_MODE ?= consumer
 
